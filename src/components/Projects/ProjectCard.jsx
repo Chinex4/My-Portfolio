@@ -7,7 +7,7 @@ const ProjectCard = ({ image, title, description, technologies, link }) => {
             initial={{ x: 200, opacity: 0, scale:0 }}
             whileInView={{ x: 0, opacity: 1, scale:1 }}
             whileHover={{y: -20}}
-            transition={{ duration: 0.6, type: 'spring', stiffness: 100, ease: 'easeIn' }}
+            transition={{ duration: 0.6, type: 'tween', ease: 'easeIn' }}
             href={link}
             className='w-[20rem] md:w-[25rem] lg:w-[24rem] rounded-lg flex flex-col transition-all duration-300 ease-linear bg-[#074b53cb] hover:shadow-xl hover:shadow-[#67d3df25]'>
             <span>

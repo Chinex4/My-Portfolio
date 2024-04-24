@@ -33,6 +33,7 @@ const NavBar = ({ ...props }) => {
                     >
                         <motion.a
                             whileHover={{ color: '#67D3DF' }}
+                            whileTap={{ color: '#67D3DF'}}
                             transition={{ duration: 0.2 }}
                             href={`#${item.toLowerCase()}`}
                             className='md:text-xl transition-all ease-in-out'>
