@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 const ProjectCard = ({ image, title, description, technologies, link }) => {
     return (
         <motion.a
-            initial={{ x: 200, opacity: 0, scale:0 }}
-            whileInView={{ x: 0, opacity: 1, scale:1 }}
+            initial={{ opacity: 0, scale:0 }}
+            whileInView={{ opacity: 1, scale:1 }}
             whileHover={{y: -20}}
             transition={{ duration: 0.6, type: 'tween', ease: 'easeIn' }}
             href={link}
