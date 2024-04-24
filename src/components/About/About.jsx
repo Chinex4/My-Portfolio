@@ -2,17 +2,25 @@ import React, { useState, useEffect } from 'react'
 import Technology from './Technology'
 import { technologies } from '../../util/data'
 import SectionHeading from '../SectionHeading'
+import { motion } from 'framer-motion'
 
 const About = () => {
-    
+
     return (
-        <section id='about' className='px-4 py-6 md:px-28 mt-[2rem] md:mt-[7rem] text-[#f5f5f5]'>
+        <motion.section
+
+            id='about'
+            className='px-4 py-6 md:px-28 mt-[2rem] md:mt-[7rem] text-[#f5f5f5]'>
             <SectionHeading>
                 About Me
             </SectionHeading>
 
             <div className='mt-10 space-y-8 flex flex-col lg:flex-row lg:items-center lg:justify-between lg:gap-10'>
-                <div className='lg:w-[100rem] md:text-lg text-justify space-y-4'>
+                <motion.div 
+                    initial={{ x: -200, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, type: 'tween' }}
+                    className='lg:w-[100rem] md:text-lg text-justify space-y-4'>
                     <p>
                         <span className='text-xl md:text-3xl font-medium'>H</span>ello there! I'm <span className='text-[#67D3DF] font-medium'>Chinaza</span>, a Frontend Developer with a talent for creating visually appealing, minimalistic and seamless web experiences in order to meet users needs and solve their problems.
                     </p>
@@ -28,11 +36,15 @@ const About = () => {
                     <p>
                         Here are a few technologies I work with <span className='lg:hidden'>👇</span> <span className='hidden lg:inline'>👉</span>
                     </p>
-                </div>
+                </motion.div>
                 <div className=''>
-                    <div className='w-full md:w-[60%] lg:w-[80%] mx-auto flex justify-center content-start items-center flex-wrap gap-4'>
+                    <motion.div
+                        initial={{ scale: 0, opacity: 0 }}
+                        whileInView={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 1, type: 'tween' }}
+                        className='w-full md:w-[60%] lg:w-[80%] mx-auto flex justify-center content-start items-center flex-wrap gap-4'>
                         {
-                            technologies.map(({text, Icon, color}) => {
+                            technologies.map(({ text, Icon, color }) => {
                                 return (
                                     <Technology color={color} Icon={Icon} key={text}>
                                         {text}
@@ -40,11 +52,11 @@ const About = () => {
                                 )
                             })
                         }
-                    </div>
+                    </motion.div>
                 </div>
 
             </div>
-        </section>
+        </motion.section>
     )
 }
 

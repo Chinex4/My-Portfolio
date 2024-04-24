@@ -3,6 +3,7 @@ import SectionHeading from '../SectionHeading'
 import Button from '../Introduction/Button'
 import SocialLink from '../Introduction/SocialLink'
 import { FaMessage, FaGithub, FaLinkedinIn, FaX } from 'react-icons/fa6'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
     return (
@@ -11,9 +12,13 @@ const Contact = () => {
                 Contact Me
             </SectionHeading>
             <div className='space-y-20'>
-                <p className='text-lg md:text-xl text-center md:px-32 lg:px-52 md:leading-10'>
+                <motion.p 
+                    initial={{ y: 200, opacity: 0, scale: 0 }}
+                    whileInView={{ y: 0, opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.6, type: 'tween', ease: 'easeIn' }}
+                    className='text-lg md:text-xl text-center md:px-32 lg:px-52 md:leading-10'>
                     Let's collaborate and work together towards creating an amazing user interface and experience. Get in touch today, and let's explore how I can enhance your frontend development requirements. Reach out, and together, we'll bring to life something truly remarkable!
-                </p>
+                </motion.p>
                 <div className='grid place-items-center gap-10'>
                     <Button width={'w-[11rem]'} href={"mailto:chinazaokuefuna4@gmail.com"}><span>Get In Touch</span> <FaMessage /></Button>
                     <div className='flex gap-6'>

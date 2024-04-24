@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import HamBurger from './HamBurger'
 import NavBar from './NavBar'
+import { motion } from 'framer-motion'
 
 const Header = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
@@ -26,19 +27,27 @@ const Header = () => {
 
 
     return (
-        <header className='fixed top-0 w-full text-[#f5f5f5] p-4 md:px-28 flex flex-col bg-[#121212] z-20'>
+        <motion.header
+            initial={{ y: -500, opacity: 0.5 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 1, type: 'tween' }}
+            className='fixed top-0 w-full text-[#f5f5f5] p-4 md:px-28 flex flex-col bg-[#121212] z-20'>
             <div className='flex items-center justify-between'>
-                <h1 className='text-2xl md:text-3xl font-bold text-[#67D3DF]'><a className='' href="#home">Chinaza.</a></h1>
+                <motion.h1
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ ease: 'easeInOut', duration: 0.5 }}
+                    className='text-2xl md:text-3xl font-bold text-[#67D3DF]'>
+                    <a className='' href="#home">Chinaza.</a>
+                </motion.h1>
                 <HamBurger onClick={handleMenuShow} className="md:hidden text-[#67D3DF]">
                     {icon}
                 </HamBurger>
 
                 <NavBar className="hidden md:block text-[1.2rem]" />
             </div>
-
             <NavBar className={mobileMenuClass} />
 
-        </header>
+        </motion.header>
 
     )
 }

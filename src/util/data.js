@@ -8,6 +8,7 @@ import {
   FaHtml5,
   FaJs,
   FaSass,
+  
 } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
 import investment from '../assets/investment.png'
@@ -19,6 +20,7 @@ import fylo from '../assets/fylo.png'
 import huddle from '../assets/huddle.png'
 import news from '../assets/news.png'
 import weather from '../assets/weather.png'
+import { TbBrandFramerMotion } from "react-icons/tb";
 export const technologies = [
   {
     text: "React",
@@ -64,6 +66,11 @@ export const technologies = [
     text: "SASS",
     Icon: FaSass,
     color: "#CC6699",
+  },
+  {
+    text: "FramerMotion",
+    Icon: TbBrandFramerMotion,
+    color: "#6D28D9",
   },
 ];
 

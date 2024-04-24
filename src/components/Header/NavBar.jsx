@@ -1,16 +1,47 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const navItems = ["Home", "About", "Projects", "Contact"]
 
-const NavBar = ({...props}) => {
+const fadeIn = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: { 
+            delay: 1, 
+            duration: 1.5, 
+            type: 'tween' 
+        }
+    }
+}
+
+const NavBar = ({ ...props }) => {
     return (
-        <nav {...props}>
+        <motion.nav
+            variants={fadeIn}
+            initial="hidden"
+            animate="visible"
+            
+
+            {...props}>
             <ul className='md:flex md:space-x-10 md:space-y-0 space-y-3'>
                 {
-                    navItems.map(item => <li key={item}><a href={`#${item.toLowerCase()}`} className='hover:text-[#67D3DF] md:text-xl transition-all duration-300 ease-in-out'>{item}</a></li>)
+                    navItems.map(item => <li
+                        key={item}
+                    >
+                        <motion.a
+                            whileHover={{ color: '#67D3DF' }}
+                            transition={{ duration: 0.2 }}
+                            href={`#${item.toLowerCase()}`}
+                            className='md:text-xl transition-all ease-in-out'>
+                            {item}
+                        </motion.a>
+                    </li>)
                 }
             </ul>
-        </nav>
+        </motion.nav>
     )
 }
 
