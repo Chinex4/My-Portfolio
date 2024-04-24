@@ -11,7 +11,7 @@ const Contact = () => {
                 Contact Me
             </SectionHeading>
             <div className='space-y-20'>
-                <p className='text-lg md:text-xl text-center md md:px-52 md:leading-10'>
+                <p className='text-lg md:text-xl text-center md:px-32 lg:px-52 md:leading-10'>
                     Let's collaborate and work together towards creating an amazing user interface and experience. Get in touch today, and let's explore how I can enhance your frontend development requirements. Reach out, and together, we'll bring to life something truly remarkable!
                 </p>
                 <div className='grid place-items-center gap-10'>

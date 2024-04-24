@@ -5,7 +5,7 @@ import { FaX } from 'react-icons/fa6'
 
 const SocialLinks = () => {
     return (
-        <div className='md:absolute md:bottom-1 lg:-bottom-6 space-x-4 z-10 flex'>
+        <div className='md:absolute md:-bottom-14 lg:-bottom-8 space-x-4 z-10 flex'>
             <SocialLink href={"https://github.com/chinex4"}>
                 <FaGithub size={20} />
             </SocialLink>

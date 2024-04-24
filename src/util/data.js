@@ -74,7 +74,7 @@ export const projects = [
     description:
       "An app that calculates the total amount of money invested in a year and displays the interest of the user",
     technologies: ["React", "Javascript", "Tailwind", "Github", "Git"],
-    link: "https://nex-investment-calculator.netlify.app",
+    link: "https://nex-investment-calc.netlify.app",
   },
   {
     image: fylo,
