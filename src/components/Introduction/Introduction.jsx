@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 
 import { FaDownload, FaMessage, FaX } from 'react-icons/fa6'
 import SocialLinks from './SocialLinks'
+import { TypeAnimation } from 'react-type-animation'
 
 const Introduction = () => {
     return (
@@ -24,7 +25,17 @@ const Introduction = () => {
                 </div>
                 <div className='space-y-6'>
                     <p className='md:text-xl'>
-                        I'm a Frontend React Developer, I create visually appealing user interfaces and experience to meet users' needs. Get to know about me and what I do as you scroll
+                        <TypeAnimation 
+                            splitter={str => str.split(/(?= )/)}
+                            sequence={[
+                                1000,
+                                "I'm a Frontend React Developer, I create visually appealing user interfaces and experience to meet users' needs. Get to know about me and what I do as you scroll.",
+                            ]}
+                            speed={{type: 'keyStrokeDelayInMs', value: 200}}
+                            omitDeletionAnimation={true}
+                            // repeat={}
+                        />
+                        
                     </p>
                     <div className='space-x-6 flex justify-center md:justify-start'>
                         <Button href={"mailto:chinazaokuefuna4@gmail.com"}><span>Get In Touch</span> <FaMessage /></Button>
