@@ -15,10 +15,10 @@ const Introduction = () => {
                 transition={{ delay: 1, duration: 1, type:'tween'}}
                 className='md:w-[40rem] space-y-6 md:space-y-8'>
                 <div className='space-y-2'>
-                    <h1 className='text-5xl md:text-[3rem] lg:text-[5rem] md:leading-[4rem] lg:leading-[5rem] font-bold'>
+                    <h1 className='text-[4rem] leading-[4.5rem] md:text-[3rem] lg:text-[5rem] md:leading-[4rem] lg:leading-[5rem] font-bold'>
                         Hi, I'm Chinaza Okuefuna
                     </h1>
-                    <h3 className='font-bold text-xl md:text-3xl'>
+                    <h3 className='font-bold text-[2rem] md:text-3xl'>
                         <span className='text-[#67D3DF]'>Frontend</span> Developer
                     </h3>
                 </div>

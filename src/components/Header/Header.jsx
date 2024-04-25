@@ -9,7 +9,7 @@ const Header = () => {
         setMenuIsOpen(!menuIsOpen)
     }
 
-    let mobileMenuClass = "mt-4";
+    let mobileMenuClass = "mt-4 md:hidden";
     let icon;
 
     if (!menuIsOpen) {
@@ -45,7 +45,14 @@ const Header = () => {
 
                 <NavBar className="hidden md:block text-[1.2rem]" />
             </div>
+            <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                whileInView={{ height: 150, opacity: 1, backgroundColor: '#121212' }}
+                transition={{duration: 0.5}}
+                animate={{height: 0, opacity: 0}}
+                className={`md:h-0 ${mobileMenuClass} mt-0`}>
             <NavBar className={mobileMenuClass} />
+            </motion.div>
 
         </motion.header>
 
