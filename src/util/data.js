@@ -8,18 +8,17 @@ import {
   FaHtml5,
   FaJs,
   FaSass,
-  
 } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
-import investment from '../assets/investment.png'
-import age from '../assets/age.png'
-import calculator from '../assets/calculator.png'
-import createverse from '../assets/createverse.png'
-import dictionary from '../assets/dictionary.png'
-import fylo from '../assets/fylo.png'
-import huddle from '../assets/huddle.png'
-import news from '../assets/news.png'
-import weather from '../assets/weather.png'
+import investment from "../assets/investment.png";
+import age from "../assets/age.png";
+import createverse from "../assets/createverse.png";
+import dictionary from "../assets/dictionary.png";
+import fylo from "../assets/fylo.png";
+import huddle from "../assets/huddle.png";
+import news from "../assets/news.png";
+import weather from "../assets/weather.png";
+import quiz from "../assets/quiz.png";
 import { TbBrandFramerMotion } from "react-icons/tb";
 export const technologies = [
   {
@@ -101,7 +100,8 @@ export const projects = [
   {
     image: createverse,
     title: "Create Verse",
-    description: "A vibrant and innovative online marketplace dedicated to the buying, selling, and trading of NFTs.",
+    description:
+      "A vibrant and innovative online marketplace dedicated to the buying, selling, and trading of NFTs.",
     technologies: ["React", "Javascript", "Tailwind", "Github", "Git"],
     link: "https://createverse21.netlify.app",
   },
@@ -122,12 +122,19 @@ export const projects = [
     link: "https://nex-huddle-chat.netlify.app",
   },
   {
-    image: calculator,
-    title: "Calc-Master",
+    image: quiz,
+    title: "Quiz-Geniuss",
     description:
-      "A Versatile and user friendly calculator application designed to meet the computational needs of users across various domains",
-    technologies: ["React", "Javascript", "Tailwind", "Github", "Git"],
-    link: "https://nex-calculator2.netlify.app",
+      "The ultimate destination for honing your computer science skills! WIth a vast array of questions covering key concepts in programming, algorithms, data structures and more...",
+    technologies: [
+      "React",
+      "Javascript",
+      "Tailwind",
+      "Github",
+      "Git",
+      "Framer-Motion",
+    ],
+    link: "https://quizgeniuss.netlify.app",
   },
   {
     image: weather,
