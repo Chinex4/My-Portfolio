@@ -39,7 +39,7 @@ const Introduction = () => {
                     </p>
                     <div className='space-x-6 flex justify-center md:justify-start'>
                         <Button href={"mailto:chinazaokuefuna4@gmail.com"}><span>Get In Touch</span> <FaMessage /></Button>
-                        <Button href={"https://drive.google.com/file/d/1EaqGkJN3bDiyT1yB6ZB05jjMKXQ3LZ5B/view?usp=drive_link"}><span>Resume</span> <FaDownload /></Button>
+                        <Button href={"https://drive.google.com/file/d/19IvmJ5KNhGHL2taxmeHRcF7NegbQTCux/view?usp=drive_link"}><span>Resume</span> <FaDownload /></Button>
                     </div>
                 </div>
             </motion.div>
