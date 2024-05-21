@@ -95,7 +95,7 @@ export const projects = [
     title: "Nexford",
     description: "An app where users can search for the meaning of words",
     technologies: ["React", "Javascript", "Bootstrap", "Sass", "Github", "Git"],
-    link: "https://nex-dictionary.netlify.app",
+    link: "https://nexford.vercel.app",
   },
   {
     image: createverse,
@@ -111,7 +111,7 @@ export const projects = [
     description:
       "An app that can calculates the age of a user based on the user's date of birth.",
     technologies: ["React", "Javascript", "Tailwind", "Github", "Git"],
-    link: "https://nex-age-calculator.netlify.app",
+    link: "https://age-calcc.vercel.app",
   },
   {
     image: huddle,
@@ -134,7 +134,7 @@ export const projects = [
       "Git",
       "Framer-Motion",
     ],
-    link: "https://quizgeniuss.netlify.app",
+    link: "https://quiz-geniuss.vercel.app",
   },
   {
     image: weather,
@@ -142,7 +142,7 @@ export const projects = [
     description:
       "A user-friendly weather application designed to provide users with accurate and up-to-date weather information for any location worldwide.",
     technologies: ["React", "Javascript", "Tailwind", "Github", "Git"],
-    link: "https://nex-weather.netlify.app",
+    link: "https://weatherify-bice.vercel.app",
   },
   {
     image: news,
@@ -150,6 +150,6 @@ export const projects = [
     description:
       "A powerful newsletter application designed to simplify the process of creating, managing, and distributing newsletters for individuals and businesses alike",
     technologies: ["React", "Javascript", "Tailwind", "Github", "Git"],
-    link: "https://nex-newsletter-signup.netlify.app",
+    link: "https://newslettr.vercel.app",
   },
 ];
