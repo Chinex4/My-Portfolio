@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
 import investment from "../assets/investment.png";
-import age from "../assets/age.png";
+import sneakers from "../assets/sneakers.png";
 import createverse from "../assets/createverse.png";
 import dictionary from "../assets/dictionary.png";
 import fylo from "../assets/fylo.png";
@@ -106,12 +106,12 @@ export const projects = [
     link: "https://createverse21.netlify.app",
   },
   {
-    image: age,
-    title: "Age Calculator",
+    image: sneakers,
+    title: "Sneakers Haven | Ecommerce Website",
     description:
-      "An app that can calculates the age of a user based on the user's date of birth.",
-    technologies: ["React", "Javascript", "Tailwind", "Github", "Git"],
-    link: "https://age-calcc.vercel.app",
+      "The ultimate destination for the latest and greatest sneaker in fashion. Sneaker Haven offers a curated collection of premium sneakers from top brands, ensuring you step out in style and comfort,",
+    technologies: ["React", "Javascript", "Tailwind", "Github", "Git", "DaisyUI"],
+    link: "https://sneakers-shopp.vercel.app",
   },
   {
     image: huddle,
